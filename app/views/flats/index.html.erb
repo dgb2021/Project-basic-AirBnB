@@ -1,1 +1,22 @@
-<h1>ALL FLATS --> Index page</h1>
+<div class="container mt-3">
+
+    <div class="row">
+      <% @flats.each do |flat|  %>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= flat.name %></h5>
+            <p class="card-text"> <%= flat.address %></p>
+            <a href="#" class="card-link"></a>
+            <a href="#" class="card-link">Another link</a>
+            <a href="#" class="card-link">Another link</a>
+            <i class="fa-solid fa-users"></i>
+            <i class="fa-solid fa-euro-sign"></i>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  
+</div>
+
