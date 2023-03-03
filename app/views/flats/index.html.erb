@@ -17,9 +17,12 @@
                   <span><%= flat.price_per_night %></span>
                 </div>
               </div class="flex">
-                <a href="#" class="card-link-one">More info</a>
-                <a href="#" class="card-link-two ms-3">Edit</a>
-                <a href="#" class="card-link-three ms-3">Remove</a>
+                <%= link_to "More info", flat_path(flat)  %>
+                <%= link_to "Edit", edit_flat_path(flat)  %>
+                <%= link_to "Remove", 
+                  flat_path(flat),
+                  data: {turbo_method: :delete, turbo_confirm: "Are you sure"}  
+                %>
             </div>
         </div>
       </div>
