@@ -1,22 +1,32 @@
 <div class="container mt-3">
-
     <div class="row">
       <% @flats.each do |flat|  %>
       <div class="col-md-4">
         <div class="card">
+        
           <div class="card-body">
             <h5 class="card-title"><%= flat.name %></h5>
             <p class="card-text"> <%= flat.address %></p>
-            <a href="#" class="card-link"></a>
-            <a href="#" class="card-link">Another link</a>
-            <a href="#" class="card-link">Another link</a>
-            <i class="fa-solid fa-users"></i>
-            <i class="fa-solid fa-euro-sign"></i>
-          </div>
+              <div class="flex">
+                <div class="flex align-items-center">
+                  <i class="fa-solid fa-users"></i>
+                  <span><%= flat.number_of_guests %></span>
+                </div>
+                <div class="flex align-items-center">
+                  <i class="fa-sharp fa-solid fa-euro-sign"></i>
+                  <span><%= flat.price_per_night %></span>
+                </div>
+              </div class="flex">
+                <a href="#" class="card-link-one">More info</a>
+                <a href="#" class="card-link-two ms-3">Edit</a>
+                <a href="#" class="card-link-three ms-3">Remove</a>
+            </div>
         </div>
       </div>
       <% end %>
     </div>
-  
 </div>
+
+
+
 

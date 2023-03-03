@@ -1,0 +1,33 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-3 m-auto">
+      <div class="flat-form">
+        <h1>Add a new Flat</h1>
+        <div class="mt-3">
+          <%= form_with model: @restaurant do |f| %>
+            <p><%= f.label :name %></p>
+            <p><%= f.text_field :name %></p>
+            <p><%= f.label :address %></p>
+            <p><%= f.text_field :address %></p>
+            <p><%= f.label :picture_url %></p>
+            <p><%= f.text_field :picture_url %></p>
+            <p><%= f.label :description %></p>
+            <p><%= f.text_field :description %></p>
+            <p><%= f.label :price_per_night %></p>
+            <p><%= f.text_field :price_per_night %></p>
+            <p><%= f.label :number_of_guests %></p>
+            <p><%= f.text_field :number_of_guests %></p>
+            <%= f.submit "Create Flat", class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+            
+            
+
+
+
