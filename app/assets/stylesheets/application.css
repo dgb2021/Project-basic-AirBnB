@@ -50,3 +50,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}

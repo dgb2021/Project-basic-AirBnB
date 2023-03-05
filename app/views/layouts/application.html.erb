@@ -16,10 +16,10 @@
     <nav class="navbar navbar-light bg-light">
       <%= link_to "Simple AirBnB", flats_path, style: 'color:grey; font-size: 20px; margin-left: 20px; text-decoration: none;' %>
       <form class="form-inline">
-      <div class="ms-auto flex">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-success my-2 my-sm-0"  %>
+      <div class="search-bar flex py-0 text-center">
+        <input class="form-control py-0" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success py-0" type="submit">Search</button>
+        <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary text-nowrap"  %>
       </div>
       </form>
     </nav>
